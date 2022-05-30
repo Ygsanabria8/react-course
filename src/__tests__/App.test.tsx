@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import App from "../App";
 
 test('Find element by text', () => { 
-    render(<App />)
-    const linkElement = screen.getByText('Counter App');
+    const wrapper = render(<App />)
+    const linkElement = wrapper.getByText('Counter App');
     expect(linkElement).toBeInTheDocument();
 });
