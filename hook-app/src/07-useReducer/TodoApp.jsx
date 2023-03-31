@@ -8,11 +8,11 @@ export const TodoApp = () => {
             todos, onHandleNewTodo, 
             onHandleDeleteTodo, onToggleTodo,
             todosCount, todosPendingCount, 
-        } =useTodo();
+        } = useTodo();
 
     return (
         <>
-            <h1>Todo App: { todosCount() } <small>Pendientes: { todosPendingCount() }</small></h1>
+            <h1>Todo App: { todosCount } <small>Pendientes: { todosPendingCount }</small></h1>
             <hr />
             <div className="row">
                 <div className="col-7">
