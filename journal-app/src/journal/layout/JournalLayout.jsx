@@ -6,6 +6,7 @@ const draweWidth = 220;
 export const JournalLayout = ({ children }) => {
   return (
     <Box
+        className="animate__animated animate__fadeIn animate__faster"
         sx={{ display: 'flex' }}
     >   
         <Navbar draweWidth={draweWidth} />

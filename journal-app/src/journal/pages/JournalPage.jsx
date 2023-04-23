@@ -5,27 +5,27 @@ import { JournalLayout } from "../layout/JournalLayout";
 import { NoteView, NothinSelectedView } from "../view";
 
 export const JournalPage = () => {
-  return (
-    <JournalLayout>
-      {/*<NoteView />*/}
-      <NothinSelectedView />
-      <IconButton
-        size='large'
-        sx={{
-          color: 'white',
-          backgroundColor: 'error.main',
-          ':hover': { backgroundColor: 'error.main', opacity: 0.9 },
-          position: 'fixed',
-          right: 50,
-          bottom: 50
-        }}
-      >
-        <AddOutlined 
+    return (
+      <JournalLayout>
+        {/*<NoteView />*/}
+        <NothinSelectedView />
+        <IconButton
+          size='large'
           sx={{
-            fontSize: 30
+            color: 'white',
+            backgroundColor: 'error.main',
+            ':hover': { backgroundColor: 'error.main', opacity: 0.9 },
+            position: 'fixed',
+            right: 50,
+            bottom: 50
           }}
-        />
-      </IconButton>
-    </JournalLayout>
-  );
+        >
+          <AddOutlined 
+            sx={{
+              fontSize: 30
+            }}
+          />
+        </IconButton>
+      </JournalLayout>
+    );
 };
