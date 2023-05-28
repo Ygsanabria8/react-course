@@ -3,14 +3,12 @@ const { check } = require('express-validator');
 const router = express.Router();
 
 const { tokenValidator } = require('../middlewares/tokenValidator');
-
-
+const { fieldsValidator } = require('../middlewares/fieldsValidator');
 const {
   createUser,
   loginUser,
   revalidateToken,
 } = require('../controllers/auth');
-const { fieldsValidator } = require('../middlewares/fieldsValidator');
 
 router.post('/', [
   check('email', 'InvalidUserEmail').isEmail(),
